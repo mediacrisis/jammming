@@ -1,8 +1,15 @@
 import React from 'react';
+import SearchBar from '../components/SearchBar';
+import SearchResults from '../components/SearchResults';
+import Playlist from '../components/Playlist';
 
 const AppBody = () => {
 	return (
-		<p>App Body Here</p>
+		<div>
+			<SearchBar />
+			<SearchResults />
+			<Playlist />
+		</div>
 	);
 };
 
