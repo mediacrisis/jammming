@@ -1,0 +1,12 @@
+.app {
+	background-image: url(background.jpg);
+	background-repeat: repeat;
+	min-height: calc(100vh - 60px);
+	padding: 30px;
+}
+
+.listContainer {
+	display: flex;
+	margin: 0 auto;
+	max-width: 980px;
+}

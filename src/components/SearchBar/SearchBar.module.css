@@ -1,0 +1,37 @@
+.searchBar {
+	margin: 0 auto;
+	max-width: 980px;
+	text-align: center;
+}
+
+.searchForm input {
+	border: 2px solid black;
+	display: block;
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 24px;
+	margin: 0 auto;
+	padding: 6px;
+}
+
+.searchForm input:focus {
+	outline-width: 0;
+}
+
+.searchForm input[type="text"] {
+	width: 420px;
+}
+
+.searchForm input[type="submit"] {
+	background-color: #f9833f;
+	cursor: pointer;
+	box-shadow: 6px 6px 0 black;
+	font-weight: 500;
+	margin-top: 12px;
+	transition-property: background-color;
+	transition-duration: .25s;
+}
+
+.searchForm input[type="submit"]:hover {
+	background-color: #f7e61b;
+
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import Track from './Track';
+import Track from '../Track/Track';
 // @TODO: create dummy tracklist JSON object, run a loop to pass props into Track component.
 
 const Tracklist = () => {

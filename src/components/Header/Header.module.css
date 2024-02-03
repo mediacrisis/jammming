@@ -1,0 +1,28 @@
+.header {
+	background-image: url(titletriangle.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin: 0 auto;
+	max-width: 980px;
+	padding: 80px 0;
+}
+
+.h1 {
+	-webkit-text-stroke: 1px black;
+	color: #d7abff;
+	font-family: 'Bungee', sans-serif;
+	font-size: 72px;
+	margin: 0;
+	padding-left: 50px;
+	text-shadow: 0 10px 0 black;
+}
+
+.h2 {
+	-webkit-text-stroke: 1px black;
+	color: white;
+	font-family: 'Bungee', sans-serif;
+	font-size: 48px;
+	margin: 0;
+	padding-left: 50px;
+	text-shadow: 0 7px 0 black;
+}
