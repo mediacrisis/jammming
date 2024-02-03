@@ -7,7 +7,7 @@ const Playlist = () => {
 		<div className={styles.playlistContainer}>
 			<div className={styles.playlist}>
 				<h3>Playlist</h3>
-				<Tracklist />
+				<Tracklist trackData={[]} />
 			</div>
 		</div>
 	);

@@ -34,6 +34,7 @@
 .searchResults {
 	background: #d7abff;
 	border: 1px solid black;
+	min-height: calc(100% - 42px);
 	padding: 20px;
 	position: relative;
 	z-index: 3;
