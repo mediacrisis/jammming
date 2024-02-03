@@ -1,11 +1,12 @@
 .searchBar {
 	margin: 0 auto;
 	max-width: 980px;
+	padding-bottom: 80px;
 	text-align: center;
 }
 
 .searchForm input {
-	border: 2px solid black;
+	border: 1px solid black;
 	display: block;
 	font-family: 'Rajdhani', sans-serif;
 	font-size: 24px;

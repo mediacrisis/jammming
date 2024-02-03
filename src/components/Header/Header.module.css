@@ -14,7 +14,21 @@
 	font-size: 72px;
 	margin: 0;
 	padding-left: 50px;
+	position: relative;
 	text-shadow: 0 10px 0 black;
+}
+
+.h1:after {
+	background-image: url(pinksquiggle.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 40px;
+	width: 191px;
 }
 
 .h2 {
