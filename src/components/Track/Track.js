@@ -1,14 +1,16 @@
 import React from 'react';
 import styles from './Track.module.css';
-// @TODO: confirm all props needed per track (currently just song title, album and artist for dummy data).
-// @TODO: include add to playlist button.
+import TrackButton from '../TrackButton/TrackButton';
 
 const Track = (props) => {
 	return (
 		<div className={styles.track}>
-			<p className={styles.title}>{props.title}</p>
-			<p className={styles.artist}>{props.artist}</p>
-			<p className={styles.album}>{props.album}</p>
+			<div>
+				<p className={styles.title}>{props.track.title}</p>
+				<p className={styles.artist}>{props.track.artist}</p>
+				<p className={styles.album}>{props.track.album}</p>
+			</div>
+			<TrackButton btnType={props.btnType} handleClick={props.btnClick} track={props.track} />
 		</div>
 	);
 };

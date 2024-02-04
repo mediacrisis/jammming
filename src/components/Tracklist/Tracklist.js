@@ -7,10 +7,9 @@ const Tracklist = (props) => {
 		<div className={styles.tracklist}>
 		{props.trackData.length > 0 ? props.trackData.map((track) => (
 			<Track 
-			key={track.id}
-			artist={track.artist}
-			title={track.title}
-			album={track.album}
+			btnType={props.btnType}
+			btnClick={props.btnClick}
+			track={track}
 			/>
 			)) : ''}
 		</div>

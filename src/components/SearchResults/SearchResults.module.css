@@ -19,7 +19,7 @@
 }
 
 .searchResultsContainer:after {
-	background-color: #f9833f;
+	background-color: #fad2cc;
 	border: 1px solid black;
 	content: " ";
 	display: block;

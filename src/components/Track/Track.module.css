@@ -1,3 +1,33 @@
 .track {
+	border-bottom: 1px solid black;
+	display: flex;
+	justify-content: space-between;
 	font-family: 'Rajdhani', sans-serif;
+	padding: 10px 0;
+	margin: 10px 0;
+}
+
+.track p {
+	margin: 0;
+}
+
+.title {
+	font-weight: bold;
+}
+
+.artist,
+.album {
+	display: inline-block;
+}
+
+.artist::after {
+	content: " · ";
+	display: inline-block;
+	font-size: 24;
+	font-weight: bold;
+	margin: 0 5px;
+}
+
+.album {
+	font-style: italic;
 }

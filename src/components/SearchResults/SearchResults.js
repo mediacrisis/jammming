@@ -1,15 +1,13 @@
 import React from 'react';
 import Tracklist from '../Tracklist/Tracklist';
 import styles from './SearchResults.module.css';
-import testData from '../../testData';
 
-const SearchResults = () => {
-
+const SearchResults = (props) => {
 	return (
 		<div className={styles.searchResultsContainer}>
 			<div className={styles.searchResults}>
 				<h3>Search Results</h3>
-				<Tracklist trackData={testData.tracks} />
+				<Tracklist trackData={props.trackData} btnType="add" btnClick={props.btnClick} />
 			</div>
 		</div>
 	);

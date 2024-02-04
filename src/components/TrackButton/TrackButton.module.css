@@ -1,0 +1,16 @@
+.trackButton {
+	-webkit-text-stroke: 1px black;
+	background: none;
+	border: none;
+	color: #f9833f;
+	cursor: pointer;
+	font-family: 'Bungee', sans-serif;
+	font-size: 32px;
+	line-height: 24px;
+	transition-property: color;
+	transition-duration: .25s;
+}
+
+.trackButton:hover {
+	color: #f7e61b;
+}

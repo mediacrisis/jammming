@@ -6,7 +6,7 @@
 }
 
 .playlistContainer:before {
-	background-color: #f9833f;
+	background-color: #d7abff;
 	border: 1px solid black;
 	content: " ";
 	display: block;
@@ -19,7 +19,7 @@
 }
 
 .playlistContainer:after {
-	background-color: #d7abff;
+	background-color: #f7e61b;
 	border: 1px solid black;
 	content: " ";
 	display: block;

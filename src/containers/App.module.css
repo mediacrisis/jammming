@@ -1,6 +1,7 @@
 .app {
 	background-image: url(background.jpg);
 	background-repeat: repeat;
+	background-attachment: fixed;
 	min-height: calc(100vh - 60px);
 	padding: 30px;
 }
