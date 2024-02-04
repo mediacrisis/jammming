@@ -11,8 +11,8 @@
 	content: " ";
 	display: block;
 	position: absolute;
-	top: 10px;
-	left: 10px;
+		top: 10px;
+		left: 10px;
 	z-index: 2;
 	height: 100%;
 	width: 100%;
@@ -29,6 +29,41 @@
 	z-index: 1;
 	height: 100%;
 	width: 100%;
+}
+
+.rename {
+	background-image: url(gridsm.png);
+	background-repeat: no-repeat;
+	padding-top: 30px;
+	position: absolute;
+		top: -130px;
+		right: -90px;
+	height: 190px;
+	width: 240px;
+	text-align: center;
+}
+
+.rename input {
+	border: 1px solid black;
+	display: block;
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 18px;
+	margin: 0 auto;
+	padding: 6px;
+}
+
+.rename input:focus {
+	outline-width: 0;
+}
+
+.rename label {
+	-webkit-text-stroke: 1px black;
+	color: white;
+	display: block;
+	font-family: 'Bungee', sans-serif;
+	font-size: 24px;
+	margin-bottom: 5px;
+	text-shadow: 0 5px 0 black;
 }
 
 .playlist {

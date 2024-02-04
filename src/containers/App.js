@@ -11,6 +11,7 @@ function App() {
 	// eslint-disable-next-line
 	const [searchResults, setSearchResults] = useState(testData.tracks);
 	const [playlist, setPlaylist] = useState([]);
+	const [playlistName, setPlaylistName] = useState('Untitled Playlist');
 
 	const handleAddTrack = useCallback(
 		(track) => {
@@ -31,13 +32,20 @@ function App() {
 		[]
 	);
 
+	const handleRename = useCallback(
+		(name) => {
+			setPlaylistName(name);
+		},
+		[]
+	);
+
 	return (
 	<div className={styles.app}>
 		<Header />
 		<SearchBar />
 		<div className={styles.listContainer}>
 			<SearchResults btnClick={handleAddTrack} trackData={searchResults} />
-			<Playlist btnClick={handleRemoveTrack} trackData={playlist} />
+			<Playlist btnClick={handleRemoveTrack} trackData={playlist} listName={playlistName} onRename={handleRename} />
 		</div>
 		<Footer />
 	</div>

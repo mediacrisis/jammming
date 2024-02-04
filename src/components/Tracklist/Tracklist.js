@@ -10,6 +10,7 @@ const Tracklist = (props) => {
 			btnType={props.btnType}
 			btnClick={props.btnClick}
 			track={track}
+			key={track.id}
 			/>
 			)) : ''}
 		</div>
