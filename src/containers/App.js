@@ -39,13 +39,24 @@ function App() {
 		[]
 	);
 
+	const handleSave = useCallback(
+		() => {
+			//@TODO create playlist on spotify with playlistName.  When that returns, push the uri values to the playlist id.
+			let uris = [];
+			playlist.forEach(track => (
+				uris.push(track.uri)
+			));
+		},
+		[playlist]
+	)
+
 	return (
 	<div className={styles.app}>
 		<Header />
 		<SearchBar />
 		<div className={styles.listContainer}>
 			<SearchResults btnClick={handleAddTrack} trackData={searchResults} />
-			<Playlist btnClick={handleRemoveTrack} trackData={playlist} listName={playlistName} onRename={handleRename} />
+			<Playlist btnClick={handleRemoveTrack} trackData={playlist} listName={playlistName} onRename={handleRename} onSave={handleSave}/>
 		</div>
 		<Footer />
 	</div>

@@ -1,5 +1,6 @@
 import React,{ useCallback } from 'react';
 import Tracklist from '../Tracklist/Tracklist';
+import SaveButton from '../SaveButton/SaveButton';
 import styles from './Playlist.module.css';
 
 const Playlist = (props) => {
@@ -21,6 +22,7 @@ const Playlist = (props) => {
 				<div className={styles.playlist}>
 					<h3>{props.listName}</h3>
 					<Tracklist trackData={props.trackData} btnType="remove" btnClick={props.btnClick} />
+					<SaveButton onSave={props.onSave} />
 				</div>
 			</div>
 	);

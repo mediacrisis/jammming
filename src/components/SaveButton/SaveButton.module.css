@@ -1,0 +1,18 @@
+.saveBtn {
+	background-color: #f9833f;
+	box-shadow: 6px 6px 0 black;
+	cursor: pointer;
+	display: block;
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	margin: 20px auto;
+	padding: 6px;
+	transition-property: background-color;
+	transition-duration: .25s;
+}
+
+.saveBtn:hover {
+	background-color: #f7e61b;
+
+}
