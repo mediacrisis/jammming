@@ -6,7 +6,7 @@ const Track = (props) => {
 	return (
 		<div className={styles.track}>
 			<div>
-				<p className={styles.title}>{props.track.title}</p>
+				<p className={styles.title}>{props.track.name}</p>
 				<p className={styles.artist}>{props.track.artist}</p>
 				<p className={styles.album}>{props.track.album}</p>
 			</div>

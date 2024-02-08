@@ -5,13 +5,20 @@ import SearchBar from '../components/SearchBar/SearchBar';
 import SearchResults from '../components/SearchResults/SearchResults';
 import Playlist from '../components/Playlist/Playlist';
 import Footer from '../components/Footer/Footer';
-import testData from '../testData';
+import Spotify from '../utils/Spotify';
 
 function App() {
 	// eslint-disable-next-line
-	const [searchResults, setSearchResults] = useState(testData.tracks);
+	const [searchResults, setSearchResults] = useState([]);
 	const [playlist, setPlaylist] = useState([]);
 	const [playlistName, setPlaylistName] = useState('Untitled Playlist');
+
+	const handleSearch = useCallback(
+		(term) => {
+			Spotify.search(term).then(setSearchResults);
+		},
+		[]
+	);
 
 	const handleAddTrack = useCallback(
 		(track) => {
@@ -46,14 +53,15 @@ function App() {
 			playlist.forEach(track => (
 				uris.push(track.uri)
 			));
+			console.log(playlist);
 		},
 		[playlist]
-	)
+	);
 
 	return (
 	<div className={styles.app}>
 		<Header />
-		<SearchBar />
+		<SearchBar onSearch={handleSearch} />
 		<div className={styles.listContainer}>
 			<SearchResults btnClick={handleAddTrack} trackData={searchResults} />
 			<Playlist btnClick={handleRemoveTrack} trackData={playlist} listName={playlistName} onRename={handleRename} onSave={handleSave}/>
