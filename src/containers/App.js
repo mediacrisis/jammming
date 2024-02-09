@@ -48,14 +48,13 @@ function App() {
 
 	const handleSave = useCallback(
 		() => {
-			//@TODO create playlist on spotify with playlistName.  When that returns, push the uri values to the playlist id.
 			let uris = [];
 			playlist.forEach(track => (
 				uris.push(track.uri)
 			));
-			console.log(playlist);
+			Spotify.savePlaylist(playlistName, uris)
 		},
-		[playlist]
+		[playlist, playlistName]
 	);
 
 	return (
