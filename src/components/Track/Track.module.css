@@ -31,3 +31,11 @@
 .album {
 	font-style: italic;
 }
+
+.trackInner {
+	display: flex;
+}
+
+.trackInner > div {
+	margin-right: 12px;
+}
