@@ -27,6 +27,8 @@ function App() {
 			}
 
 			setPlaylist((prevTracks) => [...prevTracks, track]);
+			setSearchResults((prevResults) => 
+				prevResults.filter((currentTrack) => currentTrack.id !== track.id ));
 		},
 		[playlist]
 	);
@@ -52,7 +54,7 @@ function App() {
 			playlist.forEach(track => (
 				uris.push(track.uri)
 			));
-			Spotify.savePlaylist(playlistName, uris)
+			Spotify.savePlaylist(playlistName, uris).then(setPlaylist([])).then(setPlaylistName('Untitled Playlist'));
 		},
 		[playlist, playlistName]
 	);
