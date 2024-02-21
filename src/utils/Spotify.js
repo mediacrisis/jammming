@@ -1,5 +1,5 @@
 const client_id = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
-const redirect_uri = 'http://localhost:3000/callback';
+const redirect_uri = 'https://jammming90s.netlify.app/callback';
 let accessToken;
 
 const Spotify = {
